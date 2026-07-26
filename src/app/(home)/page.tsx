@@ -17,6 +17,7 @@ export default function HomePage() {
       desc: 'Tiểu sử Dante Alighieri, bối cảnh Florence thế kỷ XIV & nghệ thuật biểu tượng.',
       items: [
         { num: '00', title: 'Hướng Dẫn Đọc & Bối Cảnh Thần Khúc', href: '/docs/huong-dan-doc-va-bco-canh' },
+        { num: '00b', title: 'Phụ Lục: Niên Biểu Cuộc Đời & Sơ Đồ 3 Cõi', href: '/docs/phu-luc-tieu-su-va-so-do-ba-coi' },
       ],
     },
     {
@@ -27,25 +28,29 @@ export default function HomePage() {
         { num: '02', title: 'Canto I - Nửa Đời Rừng Rậm & Ba Cánh Thú', href: '/docs/phan-1-inferno-dia-nguc/01-canto-1-nua-doi-giao-lo' },
         { num: '03', title: 'Canto II & III - Cổng Địa Ngục & Sông Acheron', href: '/docs/phan-1-inferno-dia-nguc/02-canto-2-3-cong-dia-nguc' },
         { num: '04', title: 'Tầng 1 đến Tầng 5 - Limbo, Dục Vọng & Phẫn Nộ', href: '/docs/phan-1-inferno-dia-nguc/03-tang-1-5-limbo-duc-vong-phan-no' },
-        { num: '05', title: 'Tầng 6 đến Tầng 9 - Thành Dis, Gian Trá & Lucifer', href: '/docs/phan-1-inferno-dia-nguc/04-tang-6-9-thanh-dis-gian-tra-lucifer' },
+        { num: '05', title: 'Tầng 6 & 7 - Thành Dis & Các Vòng Bạo Lực', href: '/docs/phan-1-inferno-dia-nguc/04-tang-6-7-thanh-dis-va-bao-luc' },
+        { num: '06', title: 'Tầng 8 - 10 Hào Đá Malebolge', href: '/docs/phan-1-inferno-dia-nguc/05-tang-8-10-hao-da-malebolge' },
+        { num: '07', title: 'Tầng 9 - Hồ Băng Cocytus & Lucifer', href: '/docs/phan-1-inferno-dia-nguc/06-tang-9-ho-bang-cocytus-lucifer' },
       ],
     },
     {
       title: 'Phần II: Purgatorio (Tĩnh Ngục)',
       desc: 'Hành trình leo Núi Tĩnh Ngục thanh tẩy 7 Mối Tội Đầu.',
       items: [
-        { num: '06', title: 'Tổng Quan Núi Tĩnh Ngục', href: '/docs/phan-2-purgatorio-tinh-nguc' },
-        { num: '07', title: 'Bờ Núi & 7 Tầng Sám Hối', href: '/docs/phan-2-purgatorio-tinh-nguc/01-7-tang-sam-hoi' },
-        { num: '08', title: 'Khu Vườn Địa Bàng & Cuộc Gặp Beatrice', href: '/docs/phan-2-purgatorio-tinh-nguc/02-dia-bang-va-beatrice' },
+        { num: '08', title: 'Tổng Quan Núi Tĩnh Ngục', href: '/docs/phan-2-purgatorio-tinh-nguc' },
+        { num: '09', title: 'Bờ Biển & Tiền Tĩnh Ngục (Ante-Purgatory)', href: '/docs/phan-2-purgatorio-tinh-nguc/01-bo-bien-va-tien-tinh-nguc' },
+        { num: '10', title: '7 Tầng Sám Hối Trên Núi Tĩnh Ngục', href: '/docs/phan-2-purgatorio-tinh-nguc/02-7-tang-sam-hoi' },
+        { num: '11', title: 'Vườn Địa Bàng & Cuộc Gặp Beatrice', href: '/docs/phan-2-purgatorio-tinh-nguc/03-dia-bang-va-beatrice' },
       ],
     },
     {
       title: 'Phần III: Paradiso (Thiên Đường)',
       desc: 'Thăng hoa qua 9 Tầng Thiên Đường đến Cõi Hồng Bông (Empyrean).',
       items: [
-        { num: '09', title: 'Tổng Quan 9 Tầng Thiên Đường', href: '/docs/phan-3-paradiso-thien-duong' },
-        { num: '10', title: 'Các Tầng Hành Tinh & Thiên Thần', href: '/docs/phan-3-paradiso-thien-duong/01-cac-tang-hanh-tinh' },
-        { num: '11', title: 'Cõi Empyrean & Trải Nghiệm Ánh Sáng Thượng Đế', href: '/docs/phan-3-paradiso-thien-duong/02-coi-empyrean-anh-sang' },
+        { num: '12', title: 'Tổng Quan 9 Tầng Thiên Đường', href: '/docs/phan-3-paradiso-thien-duong' },
+        { num: '13', title: 'Các Tầng Hành Tinh & Thiên Thần', href: '/docs/phan-3-paradiso-thien-duong/01-cac-tang-hanh-tinh' },
+        { num: '14', title: 'Sao Cố Định & Động Cơ Ban Đầu (Primum Mobile)', href: '/docs/phan-3-paradiso-thien-duong/02-sao-co-dinh-va-primum-mobile' },
+        { num: '15', title: 'Cõi Empyrean & Trải Nghiệm Ánh Sáng Thượng Đế', href: '/docs/phan-3-paradiso-thien-duong/03-coi-empyrean-anh-sang-toi-cao' },
       ],
     },
   ];
