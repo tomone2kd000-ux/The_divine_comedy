@@ -11,88 +11,176 @@ html > body[data-scroll-locked] {
   --removed-body-scroll-bar-size: 0px !important;
 }
 
-/* Kindle Reading Themes & Custom Colors */
-html[data-kindle-theme="sepia"],
-html[data-kindle-theme="sepia"] body,
-html[data-kindle-theme="sepia"] main,
-html[data-kindle-theme="sepia"] article,
-html[data-kindle-theme="sepia"] aside {
-  background-color: #fbf0d9 !important;
-  color: #3b2d1d !important;
+/* Default Soft Paper Light Theme for Docs (Dịu mắt, ngả kem nhẹ) */
+:root {
+  --fd-background: #faf7f0;
+  --fd-foreground: #2b251e;
+  --fd-card: #f3ece0;
+  --fd-card-foreground: #2b251e;
+  --fd-popover: #faf7f0;
+  --fd-popover-foreground: #2b251e;
+  --fd-muted: #ece3d3;
+  --fd-muted-foreground: #6e6456;
+  --fd-border: #e4d8c3;
+  --fd-primary: #8b4513;
+  --fd-primary-foreground: #ffffff;
 }
 
-html[data-kindle-theme="sepia"] .fd-card,
-html[data-kindle-theme="sepia"] pre,
-html[data-kindle-theme="sepia"] code,
-html[data-kindle-theme="sepia"] details {
-  background-color: #f3e5c8 !important;
-  border-color: #e4d3b1 !important;
-  color: #3b2d1d !important;
+/* Base Prose / Book Typography Adjustments */
+article, .prose {
+  line-height: 1.85;
 }
 
+article p {
+  margin-bottom: 1.35em;
+}
+
+/* ==========================================================================
+   Kindle Reader Modes (Cream Paper, Warm Gold, Aged Parchment, Soft Night, OLED)
+   ========================================================================== */
+
+/* 1. Giấy Ngà Đọc Sách (Cream Paper) */
+html[data-kindle-theme="cream"],
+html[data-kindle-theme="cream"] body,
+html[data-kindle-theme="cream"] main,
+html[data-kindle-theme="cream"] article,
+html[data-kindle-theme="cream"] aside,
+html[data-kindle-theme="cream"] header,
+html[data-kindle-theme="cream"] nav {
+  background-color: #fbf7ef !important;
+  color: #2c251e !important;
+}
+
+html[data-kindle-theme="cream"] .fd-card,
+html[data-kindle-theme="cream"] pre,
+html[data-kindle-theme="cream"] code,
+html[data-kindle-theme="cream"] details,
+html[data-kindle-theme="cream"] blockquote {
+  background-color: #f3ece0 !important;
+  border-color: #e4d8c3 !important;
+  color: #2c251e !important;
+}
+
+/* 2. Giấy Vàng Ấm (Kindle Warm Gold 12) */
 html[data-kindle-theme="warm"],
 html[data-kindle-theme="warm"] body,
 html[data-kindle-theme="warm"] main,
 html[data-kindle-theme="warm"] article,
-html[data-kindle-theme="warm"] aside {
+html[data-kindle-theme="warm"] aside,
+html[data-kindle-theme="warm"] header,
+html[data-kindle-theme="warm"] nav {
   background-color: #f4ebd0 !important;
-  color: #2c2217 !important;
+  color: #342819 !important;
 }
 
 html[data-kindle-theme="warm"] .fd-card,
 html[data-kindle-theme="warm"] pre,
 html[data-kindle-theme="warm"] code,
-html[data-kindle-theme="warm"] details {
-  background-color: #e8ddbe !important;
-  border-color: #dbcfae !important;
-  color: #2c2217 !important;
+html[data-kindle-theme="warm"] details,
+html[data-kindle-theme="warm"] blockquote {
+  background-color: #eae0c1 !important;
+  border-color: #dcc99f !important;
+  color: #342819 !important;
 }
 
+/* 3. Bìa Da Sách Cổ (Aged Parchment) */
+html[data-kindle-theme="parchment"],
+html[data-kindle-theme="parchment"] body,
+html[data-kindle-theme="parchment"] main,
+html[data-kindle-theme="parchment"] article,
+html[data-kindle-theme="parchment"] aside,
+html[data-kindle-theme="parchment"] header,
+html[data-kindle-theme="parchment"] nav {
+  background-color: #eee3c7 !important;
+  color: #2d2114 !important;
+}
+
+html[data-kindle-theme="parchment"] .fd-card,
+html[data-kindle-theme="parchment"] pre,
+html[data-kindle-theme="parchment"] code,
+html[data-kindle-theme="parchment"] details,
+html[data-kindle-theme="parchment"] blockquote {
+  background-color: #e3d6b4 !important;
+  border-color: #d5c39c !important;
+  color: #2d2114 !important;
+}
+
+/* 4. Đêm Mềm (Soft Night Paper) */
+html[data-kindle-theme="night"],
+html[data-kindle-theme="night"] body,
+html[data-kindle-theme="night"] main,
+html[data-kindle-theme="night"] article,
+html[data-kindle-theme="night"] aside,
+html[data-kindle-theme="night"] header,
+html[data-kindle-theme="night"] nav {
+  background-color: #1c1b18 !important;
+  color: #e6e0d4 !important;
+}
+
+html[data-kindle-theme="night"] .fd-card,
+html[data-kindle-theme="night"] pre,
+html[data-kindle-theme="night"] code,
+html[data-kindle-theme="night"] details,
+html[data-kindle-theme="night"] blockquote {
+  background-color: #272522 !important;
+  border-color: #3a3732 !important;
+  color: #e6e0d4 !important;
+}
+
+/* 5. OLED Black */
 html[data-kindle-theme="black"],
 html[data-kindle-theme="black"] body,
 html[data-kindle-theme="black"] main,
 html[data-kindle-theme="black"] article,
-html[data-kindle-theme="black"] aside {
+html[data-kindle-theme="black"] aside,
+html[data-kindle-theme="black"] header,
+html[data-kindle-theme="black"] nav {
   background-color: #050505 !important;
-  color: #e4e4e7 !important;
+  color: #dcd8cf !important;
 }
 
 html[data-kindle-theme="black"] .fd-card,
 html[data-kindle-theme="black"] pre,
 html[data-kindle-theme="black"] code,
-html[data-kindle-theme="black"] details {
+html[data-kindle-theme="black"] details,
+html[data-kindle-theme="black"] blockquote {
   background-color: #121212 !important;
   border-color: #27272a !important;
-  color: #e4e4e7 !important;
+  color: #dcd8cf !important;
 }
 
-/* Kindle Font Sizes */
+/* Font Sizing Controls */
 html[data-kindle-font-size="sm"] article,
 html[data-kindle-font-size="sm"] .prose {
   font-size: 15px !important;
-  line-height: 1.7 !important;
+  line-height: 1.75 !important;
 }
 
 html[data-kindle-font-size="md"] article,
 html[data-kindle-font-size="md"] .prose {
   font-size: 17px !important;
-  line-height: 1.8 !important;
+  line-height: 1.85 !important;
 }
 
 html[data-kindle-font-size="lg"] article,
 html[data-kindle-font-size="lg"] .prose {
   font-size: 19px !important;
-  line-height: 1.85 !important;
+  line-height: 1.9 !important;
 }
 
 html[data-kindle-font-size="xl"] article,
 html[data-kindle-font-size="xl"] .prose {
   font-size: 21px !important;
-  line-height: 1.9 !important;
+  line-height: 1.95 !important;
 }
 
-/* Kindle Font Family */
+/* Font Family Selection */
 html[data-kindle-font-family="serif"] article,
 html[data-kindle-font-family="serif"] .prose {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: var(--font-serif), Georgia, Cambria, "Times New Roman", serif !important;
+}
+
+html[data-kindle-font-family="sans"] article,
+html[data-kindle-font-family="sans"] .prose {
+  font-family: var(--font-sans), Inter, sans-serif !important;
 }
