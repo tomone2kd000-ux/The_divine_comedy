@@ -10,3 +10,89 @@ html > body[data-scroll-locked] {
   margin-right: 0px !important;
   --removed-body-scroll-bar-size: 0px !important;
 }
+
+/* Kindle Reading Themes & Custom Colors */
+html[data-kindle-theme="sepia"],
+html[data-kindle-theme="sepia"] body,
+html[data-kindle-theme="sepia"] main,
+html[data-kindle-theme="sepia"] article,
+html[data-kindle-theme="sepia"] aside {
+  background-color: #fbf0d9 !important;
+  color: #3b2d1d !important;
+}
+
+html[data-kindle-theme="sepia"] .fd-card,
+html[data-kindle-theme="sepia"] pre,
+html[data-kindle-theme="sepia"] code,
+html[data-kindle-theme="sepia"] details {
+  background-color: #f3e5c8 !important;
+  border-color: #e4d3b1 !important;
+  color: #3b2d1d !important;
+}
+
+html[data-kindle-theme="warm"],
+html[data-kindle-theme="warm"] body,
+html[data-kindle-theme="warm"] main,
+html[data-kindle-theme="warm"] article,
+html[data-kindle-theme="warm"] aside {
+  background-color: #f4ebd0 !important;
+  color: #2c2217 !important;
+}
+
+html[data-kindle-theme="warm"] .fd-card,
+html[data-kindle-theme="warm"] pre,
+html[data-kindle-theme="warm"] code,
+html[data-kindle-theme="warm"] details {
+  background-color: #e8ddbe !important;
+  border-color: #dbcfae !important;
+  color: #2c2217 !important;
+}
+
+html[data-kindle-theme="black"],
+html[data-kindle-theme="black"] body,
+html[data-kindle-theme="black"] main,
+html[data-kindle-theme="black"] article,
+html[data-kindle-theme="black"] aside {
+  background-color: #050505 !important;
+  color: #e4e4e7 !important;
+}
+
+html[data-kindle-theme="black"] .fd-card,
+html[data-kindle-theme="black"] pre,
+html[data-kindle-theme="black"] code,
+html[data-kindle-theme="black"] details {
+  background-color: #121212 !important;
+  border-color: #27272a !important;
+  color: #e4e4e7 !important;
+}
+
+/* Kindle Font Sizes */
+html[data-kindle-font-size="sm"] article,
+html[data-kindle-font-size="sm"] .prose {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+html[data-kindle-font-size="md"] article,
+html[data-kindle-font-size="md"] .prose {
+  font-size: 17px !important;
+  line-height: 1.8 !important;
+}
+
+html[data-kindle-font-size="lg"] article,
+html[data-kindle-font-size="lg"] .prose {
+  font-size: 19px !important;
+  line-height: 1.85 !important;
+}
+
+html[data-kindle-font-size="xl"] article,
+html[data-kindle-font-size="xl"] .prose {
+  font-size: 21px !important;
+  line-height: 1.9 !important;
+}
+
+/* Kindle Font Family */
+html[data-kindle-font-family="serif"] article,
+html[data-kindle-font-family="serif"] .prose {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+}

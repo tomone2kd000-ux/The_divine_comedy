@@ -12,6 +12,7 @@ import { getMDXComponents } from '@/components/mdx';
 import type { Metadata } from 'next';
 import { createRelativeLink } from 'fumadocs-ui/mdx';
 import { gitConfig } from '@/lib/shared';
+import { KindleReaderControls } from '@/components/kindle-reader-controls';
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
@@ -25,12 +26,14 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
     <DocsPage toc={page.data.toc} full={page.data.full}>
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription className="mb-0">{page.data.description}</DocsDescription>
-      <div className="flex flex-row gap-2 items-center border-b pb-6">
+      <div className="flex flex-row flex-wrap gap-2 items-center border-b pb-6">
         <MarkdownCopyButton markdownUrl={markdownUrl} />
         <ViewOptionsPopover
           markdownUrl={markdownUrl}
           githubUrl={`https://github.com/${gitConfig.user}/${gitConfig.repo}/blob/${gitConfig.branch}/content/docs/${page.path}`}
         />
+        <KindleReaderToolbarDivider />
+        <KindleReaderControls />
       </div>
       <DocsBody>
         <MDX
@@ -41,6 +44,10 @@ export default async function Page(props: { params: Promise<{ slug?: string[] }>
       </DocsBody>
     </DocsPage>
   );
+}
+
+function KindleReaderToolbarDivider() {
+  return <div className="h-4 w-px bg-zinc-200 mx-1 hidden sm:block"></div>;
 }
 
 export async function generateStaticParams() {
