@@ -10,6 +10,11 @@
     "postinstall": "npx --no-install fumadocs-mdx || exit 0",
     "lint": "eslint"
   },
+  "overrides": {
+    "fumadocs-core": {
+      "zod": "$zod"
+    }
+  },
   "dependencies": {
     "cnfast": "^0.0.8",
     "fumadocs-core": "16.12.1",
